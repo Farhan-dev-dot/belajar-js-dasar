@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sayHello(name) {
+        console.info(`Hello ${name} `);
+      }
+      sayHello("muhamad");
+      let say = sayHello;
+
+      say("farhan");
+
+      function giveMeName(callback) {
+        callback("farhan");
+      }
+
+      giveMeName(say);
+      giveMeName(sayHello);
+    </script>
+  </body>
+</html>

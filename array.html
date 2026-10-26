@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      let arrayKosong = [];
+
+      // memasukan nilai ke array kosong
+      arrayKosong.push("muhamad");
+      arrayKosong.push(1, 2, 3, 4, 5);
+
+      let arrayNama = ["arzeta", "alena", "naycary"];
+
+      console.table(arrayNama);
+      console.table(arrayKosong);
+
+      arrayKosong[0] = 0;
+
+      delete arrayKosong[5];
+      console.table(arrayKosong);
+
+      arrayKosong.push("di tambah lagi");
+      arrayKosong.push(["bola", "badmintond", "futsal"]);
+
+      console.table(arrayKosong);
+    </script>
+  </body>
+</html>

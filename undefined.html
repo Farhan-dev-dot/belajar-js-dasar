@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar undefined</title>
+  </head>
+  <body>
+    <script>
+      let name;
+
+      if (name === undefined) {
+        console.info("undefined");
+      } else {
+        console.info("defined");
+      }
+
+      //undefined array value
+
+      const person = [1, 2];
+
+      //ketika kita tambah baru dia defined
+      // person.push(3);
+      if (person[2] === undefined) {
+        console.info("array undefined");
+      } else {
+        console.info("array defined");
+      }
+
+      // property array
+
+      const rangeUsia = {};
+
+      if (rangeUsia.name === undefined) {
+        console.info("object undefined");
+      } else {
+        console.info("object defined");
+      }
+    </script>
+  </body>
+</html>

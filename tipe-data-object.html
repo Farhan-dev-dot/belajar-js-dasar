@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {
+        nama: "muhamad farhan",
+        alamat: "indonesia",
+        umur: 26,
+      };
+
+      //menambah atau merubah
+      //   orang["nama"] = "muhamad farhan";
+      //   orang["alamat"] = "indonesia";
+      //   orang["umur"] = 26;
+
+      //menghapus
+      delete orang["umur"];
+
+      console.table(orang);
+
+      const people = {
+        "nama lengkap": "muhamad farhan",
+        alamat: "indonesia",
+        umur: 26,
+      };
+
+      console.info(`Nama : ${people["nama lengkap"]}`);
+      console.info(`alamat : ${people.alamat}`);
+      console.info(`umur : ${people.umur}`);
+    </script>
+  </body>
+</html>

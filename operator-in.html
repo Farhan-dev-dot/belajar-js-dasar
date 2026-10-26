@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        nama: "farhan",
+        usia: 20,
+      };
+      if ("nama" in person) {
+        alert(`Hello ${person.nama}`);
+      } else {
+        alert("wes angle tenan");
+      }
+
+      const mahasiswa = {
+        nama: undefined,
+        usia: 26,
+        alamat: "condet",
+      };
+
+      if ("nama" in mahasiswa) {
+        alert(`Hello ${mahasiswa.nama}`);
+      } else {
+        alert("wes angle tenan");
+      }
+
+      const names = [null, "farhan", null];
+      const result = 0 in names;
+      document.writeln(`${result}`);
+    </script>
+  </body>
+</html>

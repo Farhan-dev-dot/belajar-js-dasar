@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Ternary</title>
+  </head>
+  <body>
+    <script>
+      const nilai = 60;
+      let ucapan;
+
+      if (nilai > 70) {
+        ucapan = `Selamat anda mendapat nilai sebesar ${nilai}`;
+      } else {
+        ucapan = "ora genah wess angale";
+      }
+      document.writeln(`<p>${ucapan}</p>`);
+      //menggunakan ternary operator
+
+      ucapan =
+        nilai >= 70
+          ? `Selamat anda mendapat nilai sebesar ${nilai}`
+          : "ora genah wess angale";
+      document.writeln(`<p>${ucapan}</p>`);
+    </script>
+  </body>
+</html>
